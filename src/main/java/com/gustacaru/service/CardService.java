@@ -28,4 +28,12 @@ public class CardService {
     return this.cardRepository.save(card);
   }
 
+  public void removeCards() {
+    this.cardRepository.deleteAll();
+  }
+
+  public void removeCardById(String cardId) {
+    this.cardRepository.deleteById(cardId);
+  }
+
 }
