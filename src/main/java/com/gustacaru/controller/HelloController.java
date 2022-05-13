@@ -11,7 +11,7 @@ public class HelloController {
 
   @GetMapping
   public @ResponseBody String hello() {
-    return "Hello Spring World";
+    return "Bem vindo ao teste tecnico de Gustavo Caruso para Zappts. Consulte a documentação: https://github.com/gusttavocaruso/magic-api";
   }
 
 }
