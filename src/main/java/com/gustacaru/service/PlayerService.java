@@ -49,8 +49,6 @@ public class PlayerService {
     Player thisPlayer = findPlayerById(playerId);
     List <Card> deck = thisPlayer.getDeck();
 
-    // System.out.println(deck);
-
     for (Card card : deck) {
       if (!card.getCardId().equals(cardId)) {
         System.out.println(card);
