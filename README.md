@@ -27,9 +27,9 @@ A API permite que você crie um Player através da rota POST `http://localhost:8
 
 ```json
   {
-  	"playerName": "string",
-  	"playerUsername": "string",
-  	"playerPassword": "string"
+    "playerName": "string",
+    "playerUsername": "string",
+    "playerPassword": "string"
   }
 ```
 
@@ -37,11 +37,11 @@ A API permite que você crie Cards através da rota POST `http://localhost:8080/
 
 ```json
   {
-  	"cardName": "string",
-  	"edition": "string",
-  	"language": "string",
-  	"itsFoil": "boolean",
-  	"priceBRL": "double"
+    "cardName": "string",
+    "edition": "string",
+    "language": "string",
+    "itsFoil": "boolean",
+    "priceBRL": "double"
   }
 ```
 
@@ -52,21 +52,21 @@ Para associar as ultimas cartas criadas (staging area) à um player, utilize a r
 Essa rota resultará em um retorno similar a:
 
 ```json
-	{
-		"playerId": "627a88a68352d561efbddc21",
-		"playerName": "Joey Tribiani",
-		"playerUsername": "jtribi",
-		"playerPassword": "123455",
-		"deck": [
-			{
-				"cardId": "627a88ef8352d561efbddc23",
-				"cardName": "Murdolonte Enfurecido",
-				"edition": "primeira",
-				"language": "Português",
-				"itsFoil": true,
-				"priceBRL": 10.0
-			}
-		]
+  {
+    "playerId": "627a88a68352d561efbddc21",
+    "playerName": "Joey Tribiani",
+    "playerUsername": "jtribi",
+    "playerPassword": "123455",
+    "deck": [
+      {
+        "cardId": "627a88ef8352d561efbddc23",
+        "cardName": "Murdolonte Enfurecido",
+        "edition": "primeira",
+        "language": "Português",
+        "itsFoil": true,
+        "priceBRL": 10.0
+      }
+    ]
   } 
 ```
 
